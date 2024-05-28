@@ -1,0 +1,91 @@
+.job-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-btn{
+  background-color:  hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-weight: bold;
+}
+
+.main-btn:hover{
+  background-color:  hsl(180, 29%, 50%);
+  color: hsl(180, 52%, 96%);
+}
+
+
+.new-btn{
+  background-color:  hsl(180, 29%, 50%);
+  color: hsl(180, 52%, 96%);
+  font-weight: bold;
+}
+
+.featured-btn{
+  background-color:  hsl(180, 14%, 20%);
+  color: hsl(180, 52%, 96%);
+  font-weight: bold;
+}
+
+.company-name{
+  color: hsl(180, 29%, 50%);
+  font-weight: bold;
+}
+
+.job-position:hover{
+  color: hsl(180, 29%, 50%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+.filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.filter-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.filter-clear {
+  margin-left: auto;
+  cursor: pointer;
+  padding-left: 20px; 
+  text-decoration: underline;
+  color:hsl(180, 29%, 50%);
+}
+
+.filter-btn, .filter-span {
+  display: inline-block;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-span{
+  color:hsl(180, 29%, 50%);
+  background-color:  hsl(180, 52%, 96%);
+  font-weight: bold;
+}
+.filter-btn{
+  background-color: hsl(180, 29%, 50%);
+  color:  hsl(180, 52%, 96%);
+  font-weight: bold;
+}
+
+.filter-btn:hover{
+  background-color: hsl(180, 14%, 20%);
+  color:  hsl(180, 52%, 96%);
+}
+
