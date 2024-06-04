@@ -89,3 +89,17 @@
   color:  hsl(180, 52%, 96%);
 }
 
+
+@media (min-width: 1400px) {
+  .mt-xl-0 {
+      margin-top: 0 !important;
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mt-xl-0 {
+    margin-top: 0.5rem !important; 
+  }
+}
+
