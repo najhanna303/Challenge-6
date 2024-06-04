@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderJobListings(data) {
         jobListings.innerHTML = '';
         data.forEach(job => {
-            const languages = job.languages.map(lang => `<button type="button" class="btn main-btn ms-2">${lang}</button>`).join(' ');
-            const tools = job.tools.map(tool => `<button type="button" class="btn main-btn ms-2">${tool}</button>`).join(' ');
+            const languages = job.languages.map(lang => `<button type="button" class="btn main-btn ms-2 mt-2 mt-xl-0">${lang}</button>`).join(' ');
+            const tools = job.tools.map(tool => `<button type="button" class="btn main-btn ms-2 mt-2 mt-xl-0">${tool}</button>`).join(' ');
             const newBadge = job.new ? '<button type="button" class="btn new-btn rounded-pill">NEW!</button>' : '';
             const featuredBadge = job.featured ? '<button type="button" class="btn featured-btn rounded-pill">FEATURED</button>' : '';
 
             const jobCard = `
                 <div class="job-card">
                     <div class="row no-gutters">
-                        <div class="col-md-2 d-flex align-items-center justify-content-center">
+                        <div class="col-md-2 mb-4 d-flex align-items-center justify-content-center">
                             <img src="${job.logo}" alt="${job.company}" class="logo">
                         </div>
                         <div class="col-md-5">
@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="col-md-5 d-flex align-items-center justify-content-center">
                             <div class="mt-2 p-3">
-                                <button type="button" class="btn main-btn">${job.role}</button>
-                                <button type="button" class="btn main-btn ms-2">${job.level}</button>
+                                <button type="button" class="btn main-btn mt-2 mt-xl-0 ">${job.role}</button>
+                                <button type="button" class="btn main-btn ms-2 mt-2 mt-xl-0">${job.level}</button>
                                 ${languages}
                                 ${tools}
                             </div>
